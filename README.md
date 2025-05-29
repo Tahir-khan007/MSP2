@@ -6,6 +6,16 @@ A responsive web application to help users track their income and expenses, visu
 
 This Finance Tracker app allows users to add, view, and filter financial transactions, providing a clear overview of their total balance, income, and expenses. The app uses localStorage to persist data and Chart.js to visualize income versus expenses in a pie chart.
 
+## Code Institute - Milestone Project 2
+
+### Interactive Front-End Website Development
+
+### By Tahir Khan
+
+[View Repository on GitHub](https://github.com/Tahir-khan007/MSP2.git)
+
+[View Live Website](https://tahir-khan007.github.io/MSP2/)
+
 ## The Why
 
 The primary goal of this project is to provide users with a simple yet effective tool to manage their personal finances. By tracking income and expenses, users can better understand their spending habits and make informed financial decisions.
