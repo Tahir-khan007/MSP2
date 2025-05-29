@@ -1,0 +1,30 @@
+{
+  "name": "msp2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tahir-khan007/MSP2/issues"
+  },
+  "homepage": "https://github.com/Tahir-khan007/MSP2#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "transform": {}
+  },
+  "dependencies": {
+    "jest-environment-jsdom": "^30.0.0-beta.3"
+  }
+}
