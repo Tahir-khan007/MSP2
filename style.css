@@ -1,152 +1,93 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5;
-  color: #333;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #333;
+    min-height: 100vh;
 }
 
-header {
-  padding: 1rem;
-  background: white;
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: bold;
-  border-bottom: 1px solid #ddd;
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 2rem;
+    color: white;
 }
 
-.stats {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 1rem;
-  gap: 1rem;
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
-.stat-card,
-.chart-section {
-  background: white;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  flex: 1 1 22%;
-  min-width: 200px;
-  text-align: center;
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    line-height: 1.6;
 }
 
-.transactions {
-  background: white;
-  margin: 1rem;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
+.cta-button {
+    background: #4caf50;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
 }
 
-#chart {
-  max-height: 100px;  /* smaller height */
-  width: 100% !important;
-  height: 100px !important;
-  display: block;
-  margin: 0 auto;  /* center horizontally */
+.cta-button:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
 }
 
-.transactions-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-  flex-wrap: wrap;
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+    max-width: 800px;
 }
 
-.transactions-header button {
-  padding: 0.7em 1.7em;
-  font-size: 18px;
-  border-radius: 0.5em;
-  background: #e8e8e8;
-  cursor: pointer;
-  border: 1px solid #e8e8e8;
+.feature {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.transactions-header select {
-  padding: 0.5em;
-  font-size: 16px;
-  border-radius: 0.5em;
-  border: 1px solid #ccc;
-  margin-left: 1rem;
+.feature h3 {
+    margin-top: 0;
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
 }
 
-.table-container {
-  overflow-y: auto;
-  flex-grow: 1;
+.feature p {
+    font-size: 1rem;
+    margin: 0;
+    opacity: 0.9;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  min-width: 600px;
-}
-
-th,
-td {
-  padding: 0.75rem;
-  border: 1px solid #ddd;
-  text-align: left;
-}
-
-th {
-  background-color: #f9f9f9;
-}
-
-.income {
-  color: green;
-  font-weight: bold;
-}
-
-.expense {
-  color: red;
-  font-weight: bold;
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-content {
-  background: white;
-  padding: 2rem;
-  border-radius: 10px;
-  width: 90%;
-  max-width: 400px;
-}
-
-.modal-content input,
-.modal-content select {
-  width: 100%;
-  padding: 0.5rem;
-  margin: 0.5rem 0;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-.modal-content button {
-  padding: 0.7em 1.7em;
-  font-size: 18px;
-  border-radius: 0.5em;
-  background: #e8e8e8;
-  cursor: pointer;
-  border: 1px solid #e8e8e8;
+@media (max-width: 768px) {
+    .hero h1 {
+    font-size: 2.5rem;
+    }
+    .hero p {
+    font-size: 1.1rem;
+    }
+    .features {
+    grid-template-columns: 1fr;
+    }
 }

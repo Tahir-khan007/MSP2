@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Finance Tracker</title>
+  <link rel="stylesheet" href="finance.css">
+</head>
+<body>
+  <header>My Finance Tracker</header>
+
+  <section class="stats">
+    <div class="stat-card">
+      <div>Total Balance</div>
+      <h2 id="total-balance">£0.00</h2>
+    </div>
+    <div class="stat-card">
+      <div>Total Income</div>
+      <h2 id="total-income">£0.00</h2>
+    </div>
+    <div class="stat-card">
+      <div>Total Expenses</div>
+      <h2 id="total-expenses">£0.00</h2>
+    </div>
+    <div class="chart-section">
+      <h3>Income vs Expenses</h3>
+      <canvas id="chart" width="100" height="100"></canvas>
+    </div>
+  </section>
+
+  <section class="transactions">
+    <div class="transactions-header">
+      <h3>Recent Transactions</h3>
+      <div>
+        <button id="addTransactionBtn">Add Transaction</button>
+        <select id="filterType">
+          <option value="all">Filter by...</option>
+          <option value="Income">Income</option>
+          <option value="Expense">Expense</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Type</th>
+            <th>Amount</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody id="transactionBody">
+          <tr id="noRecords"><td colspan="5" style="text-align:center;">No records found</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="modal" id="transactionModal">
+    <div class="modal-content">
+      <h3>Add New Transaction</h3>
+      <input type="text" id="category" placeholder="Category" required/>
+      <input type="text" id="description" placeholder="Description"/>
+      <select id="type">
+        <option value="Income">Income</option>
+        <option value="Expense">Expense</option>
+      </select>
+      <input type="number" id="amount" placeholder="Amount" required/>
+      <input type="date" id="date" />
+      <button id="saveTransaction">Save</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
