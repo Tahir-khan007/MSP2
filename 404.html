@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 - Page Not Found | Finance Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .error-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 2rem;
+      color: white;
+    }
+
+    .error-icon {
+      font-size: 5rem;
+      margin-bottom: 1rem;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+
+    .error-code {
+      font-size: 8rem;
+      font-weight: bold;
+      margin: 0;
+      line-height: 1;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .error-message {
+      font-size: 2rem;
+      margin: 1rem 0;
+      font-weight: 500;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .error-description {
+      font-size: 1.3rem;
+      margin: 1rem 0 2rem;
+      opacity: 0.9;
+      max-width: 600px;
+      line-height: 1.6;
+    }
+
+    .error-buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    .error-btn {
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+      font-weight: 500;
+    }
+
+    .error-btn-primary {
+      background: #4caf50;
+      color: white;
+      box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+    }
+
+    .error-btn-primary:hover {
+      background: #45a049;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+    }
+
+    .error-btn-secondary {
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .error-btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+    }
+
+    .error-info-card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1.5rem;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      margin-top: 3rem;
+      max-width: 500px;
+    }
+
+    .error-info-card h3 {
+      margin-top: 0;
+      font-size: 1.3rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .error-info-card p {
+      font-size: 1rem;
+      margin: 0.5rem 0;
+      opacity: 0.9;
+    }
+
+    @media (max-width: 768px) {
+      .error-code {
+        font-size: 5rem;
+      }
+
+      .error-message {
+        font-size: 1.5rem;
+      }
+
+      .error-description {
+        font-size: 1.1rem;
+      }
+
+      .error-buttons {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .error-btn {
+        width: 100%;
+      }
+
+      .error-icon {
+        font-size: 4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="error-container">
+    <div class="error-icon">💸</div>
+    <h1 class="error-code">404</h1>
+    <h2 class="error-message">Oops! Page Not Found</h2>
+    <p class="error-description">
+      The page you're looking for seems to have gone missing. It might have been moved, deleted, or perhaps it never existed.
+      Let's get you back on track with your finances!
+    </p>
+    <div class="error-buttons">
+      <a href="index.html" class="error-btn error-btn-primary">Go to Home</a>
+      <a href="finance.html" class="error-btn error-btn-secondary">Open Finance Tracker</a>
+    </div>
+
+    <div class="error-info-card">
+      <h3>📌 Quick Links</h3>
+      <p>• Track your income and expenses</p>
+      <p>• View financial analytics</p>
+      <p>• Manage your budget effectively</p>
+    </div>
+  </div>
+</body>
+</html>
