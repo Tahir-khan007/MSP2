@@ -378,7 +378,7 @@ Each user story has been thoroughly tested to ensure it meets the specified requ
 
 ### Live Demo
 
-The application is deployed and accessible at: [Your deployment URL]
+The application is deployed and accessible at: [Finanace Tracker](https://tahir-khan007.github.io/MSP2/)
 
 ### Cloning Repository Locally
 
